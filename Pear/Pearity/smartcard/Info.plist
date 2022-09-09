@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSExtension</key>
+	<dict>
+		<key>NSExtensionAttributes</key>
+		<dict>
+			<key>com.apple.ctk.aid</key>
+			<string>A000000116A001</string>
+			<key>com.apple.ctk.class-id</key>
+			<string>com.pearsecurity.Pearity.smartcard</string>
+			<key>com.apple.ctk.driver-class</key>
+			<string>$(PRODUCT_MODULE_NAME).PearTokenDriver</string>
+			<key>com.apple.ctk.token-type</key>
+			<string>smartcard</string>
+		</dict>
+		<key>NSExtensionPointIdentifier</key>
+		<string>com.apple.ctk-tokens</string>
+	</dict>
+</dict>
+</plist>

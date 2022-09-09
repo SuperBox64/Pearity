@@ -1,0 +1,959 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F46CF6F288754E70065A083 /* sfAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F46CF6E288754E70065A083 /* sfAuth.swift */; };
+		F80343672873AC91003C551A /* pear in Resources */ = {isa = PBXBuildFile; fileRef = F8DFB3DA2873692300A49C61 /* pear */; };
+		F80343692873AE76003C551A /* GetBundlePath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80343682873AE76003C551A /* GetBundlePath.swift */; };
+		F803436B2873B222003C551A /* MenuBarActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F803436A2873B222003C551A /* MenuBarActions.swift */; };
+		F803436C2873B5C2003C551A /* loginwindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B68328725F1300A721C2 /* loginwindow.swift */; };
+		F8A3B64228725D3D00A721C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B64128725D3D00A721C2 /* AppDelegate.swift */; };
+		F8A3B64428725D3E00A721C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8A3B64328725D3E00A721C2 /* Assets.xcassets */; };
+		F8A3B64728725D3E00A721C2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F8A3B64528725D3E00A721C2 /* MainMenu.xib */; };
+		F8A3B66128725DEC00A721C2 /* smartcard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F8A3B65228725DEC00A721C2 /* smartcard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F8A3B66A28725E1D00A721C2 /* PearToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B66628725E1C00A721C2 /* PearToken.swift */; };
+		F8A3B66B28725E1D00A721C2 /* PearTokenSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B66728725E1C00A721C2 /* PearTokenSession.swift */; };
+		F8A3B66C28725E1D00A721C2 /* PearTokenDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B66828725E1C00A721C2 /* PearTokenDriver.swift */; };
+		F8A3B66D28725E1D00A721C2 /* PearTokenAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B66928725E1D00A721C2 /* PearTokenAuth.swift */; };
+		F8A3B67428725EC000A721C2 /* PearListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B66E28725EC000A721C2 /* PearListener.swift */; };
+		F8A3B67628725EC000A721C2 /* PearConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B67028725EC000A721C2 /* PearConstants.swift */; };
+		F8A3B67928725EC000A721C2 /* Hexa.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B67328725EC000A721C2 /* Hexa.swift */; };
+		F8A3B68628725F1300A721C2 /* PearPinPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B67A28725F1300A721C2 /* PearPinPrompt.swift */; };
+		F8A3B68728725F1300A721C2 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B67B28725F1300A721C2 /* Config.swift */; };
+		F8A3B68828725F1300A721C2 /* PearLocalPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B67C28725F1300A721C2 /* PearLocalPlist.swift */; };
+		F8A3B68A28725F1300A721C2 /* PearCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B67E28725F1300A721C2 /* PearCard.swift */; };
+		F8A3B68B28725F1300A721C2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B67F28725F1300A721C2 /* main.swift */; };
+		F8A3B68C28725F1300A721C2 /* PearBioPrompt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B68028725F1300A721C2 /* PearBioPrompt.swift */; };
+		F8A3B68E28725F1300A721C2 /* PearityCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B68228725F1300A721C2 /* PearityCodable.swift */; };
+		F8A3B69028725F1300A721C2 /* UnPearCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B68428725F1300A721C2 /* UnPearCard.swift */; };
+		F8A3B69628725F1F00A721C2 /* AES256.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B69228725F1F00A721C2 /* AES256.swift */; };
+		F8A3B69728725F1F00A721C2 /* NST256.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B69328725F1F00A721C2 /* NST256.swift */; };
+		F8A3B69828725F1F00A721C2 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B69428725F1F00A721C2 /* Defaults.swift */; };
+		F8A3B69928725F1F00A721C2 /* PearPKI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B69528725F1F00A721C2 /* PearPKI.swift */; };
+		F8A3B6A228725F2C00A721C2 /* GetUserIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B69A28725F2C00A721C2 /* GetUserIDs.swift */; };
+		F8A3B6A328725F2C00A721C2 /* GetUsersAndIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B69B28725F2C00A721C2 /* GetUsersAndIDs.swift */; };
+		F8A3B6A428725F2C00A721C2 /* GetShortName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B69C28725F2C00A721C2 /* GetShortName.swift */; };
+		F8A3B6A528725F2C00A721C2 /* OpenDirectoryUsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B69D28725F2C00A721C2 /* OpenDirectoryUsers.swift */; };
+		F8A3B6A628725F2C00A721C2 /* GetConsoleUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B69E28725F2C00A721C2 /* GetConsoleUser.swift */; };
+		F8A3B6A728725F2C00A721C2 /* GetLongName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B69F28725F2C00A721C2 /* GetLongName.swift */; };
+		F8A3B6A828725F2C00A721C2 /* GetCurrentID.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B6A028725F2C00A721C2 /* GetCurrentID.swift */; };
+		F8A3B6A928725F2C00A721C2 /* GetUID.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B6A128725F2C00A721C2 /* GetUID.swift */; };
+		F8A3B6AD28725F3F00A721C2 /* Insertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B6AA28725F3F00A721C2 /* Insertion.swift */; };
+		F8A3B6AE28725F3F00A721C2 /* SmartCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B6AB28725F3F00A721C2 /* SmartCard.swift */; };
+		F8A3B6C128725F5B00A721C2 /* PearCreateCert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B6B628725F5A00A721C2 /* PearCreateCert.swift */; };
+		F8A3B6C228725F5B00A721C2 /* PearCertificate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B6B728725F5B00A721C2 /* PearCertificate.swift */; };
+		F8A3B6C328725F5B00A721C2 /* PearLiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B6B828725F5B00A721C2 /* PearLiner.swift */; };
+		F8A3B6C428725F5B00A721C2 /* PearEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B6B928725F5B00A721C2 /* PearEncoder.swift */; };
+		F8A3B6C528725F5B00A721C2 /* GerPearAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B6BA28725F5B00A721C2 /* GerPearAuth.swift */; };
+		F8A3B6C628725F5B00A721C2 /* PearObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B6BB28725F5B00A721C2 /* PearObject.swift */; };
+		F8A3B6C728725F5B00A721C2 /* PearContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B6BC28725F5B00A721C2 /* PearContainer.swift */; };
+		F8A3B6C828725F5B00A721C2 /* PearKeyCert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B6BD28725F5B00A721C2 /* PearKeyCert.swift */; };
+		F8A3B6C928725F5B00A721C2 /* PearCert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B6BE28725F5B00A721C2 /* PearCert.swift */; };
+		F8A3B6CA28725F5B00A721C2 /* PearSecurity.otf in Resources */ = {isa = PBXBuildFile; fileRef = F8A3B6BF28725F5B00A721C2 /* PearSecurity.otf */; };
+		F8A3B6CB28725F5B00A721C2 /* PearSignCert.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B6C028725F5B00A721C2 /* PearSignCert.swift */; };
+		F8A3B6CF28725FF100A721C2 /* GetMachineID.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B6CE28725FF100A721C2 /* GetMachineID.swift */; };
+		F8A3B6D4287260DF00A721C2 /* Read.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B6D2287260DF00A721C2 /* Read.swift */; };
+		F8A3B6D6287260DF00A721C2 /* Write.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B6D3287260DF00A721C2 /* Write.swift */; };
+		F8A3B6DC2872614600A721C2 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B6DB2872614600A721C2 /* Auth.swift */; };
+		F8A3B7342872674B00A721C2 /* ShakeEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B6B028725F4900A721C2 /* ShakeEffect.swift */; };
+		F8A3B7352872674B00A721C2 /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B67D28725F1300A721C2 /* StatusBar.swift */; };
+		F8A3B7362872674B00A721C2 /* PearView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B6B128725F4900A721C2 /* PearView.swift */; };
+		F8A3B7372872674B00A721C2 /* Unfocus.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B66F28725EC000A721C2 /* Unfocus.swift */; };
+		F8A3B7382872674B00A721C2 /* Sync.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B68128725F1300A721C2 /* Sync.swift */; };
+		F8A3B7392872674B00A721C2 /* Activate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B70B2872620500A721C2 /* Activate.swift */; };
+		F8A3B73A2872674B00A721C2 /* PinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B6B228725F4900A721C2 /* PinView.swift */; };
+		F8A3B73B2872677300A721C2 /* PearPKI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B69528725F1F00A721C2 /* PearPKI.swift */; };
+		F8A3B73C2872677D00A721C2 /* AES256.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B69228725F1F00A721C2 /* AES256.swift */; };
+		F8A3B73D2872678D00A721C2 /* GetMachineID.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B6CE28725FF100A721C2 /* GetMachineID.swift */; };
+		F8A3B73E2872679C00A721C2 /* PearListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B66E28725EC000A721C2 /* PearListener.swift */; };
+		F8DFB3DD2873692300A49C61 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8DFB3DC2873692300A49C61 /* main.swift */; };
+		F8DFB3E128736A2C00A49C61 /* loginwindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B68328725F1300A721C2 /* loginwindow.swift */; };
+		F8DFB3E228736A6300A49C61 /* PearityCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B68228725F1300A721C2 /* PearityCodable.swift */; };
+		F8DFB3E328736AA400A49C61 /* run.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B6D82872611200A721C2 /* run.swift */; };
+		F8DFB3E428736BD400A49C61 /* run.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A3B6D82872611200A721C2 /* run.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F8A3B65F28725DEC00A721C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8A3B63628725D3D00A721C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8A3B65128725DEC00A721C2;
+			remoteInfo = smartcard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F8A3B66528725DEC00A721C2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F8A3B66128725DEC00A721C2 /* smartcard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DFB3D82873692300A49C61 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5F46CF6E288754E70065A083 /* sfAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sfAuth.swift; sourceTree = "<group>"; };
+		F80343682873AE76003C551A /* GetBundlePath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBundlePath.swift; sourceTree = "<group>"; };
+		F803436A2873B222003C551A /* MenuBarActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarActions.swift; sourceTree = "<group>"; };
+		F8A3B63E28725D3D00A721C2 /* Pearity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pearity.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8A3B64128725D3D00A721C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F8A3B64328725D3E00A721C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F8A3B64628725D3E00A721C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F8A3B64828725D3E00A721C2 /* Pearity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pearity.entitlements; sourceTree = "<group>"; };
+		F8A3B65228725DEC00A721C2 /* smartcard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = smartcard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8A3B65428725DEC00A721C2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F8A3B65D28725DEC00A721C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8A3B65E28725DEC00A721C2 /* smartcard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = smartcard.entitlements; sourceTree = "<group>"; };
+		F8A3B66628725E1C00A721C2 /* PearToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearToken.swift; sourceTree = "<group>"; };
+		F8A3B66728725E1C00A721C2 /* PearTokenSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearTokenSession.swift; sourceTree = "<group>"; };
+		F8A3B66828725E1C00A721C2 /* PearTokenDriver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearTokenDriver.swift; sourceTree = "<group>"; };
+		F8A3B66928725E1D00A721C2 /* PearTokenAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearTokenAuth.swift; sourceTree = "<group>"; };
+		F8A3B66E28725EC000A721C2 /* PearListener.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearListener.swift; sourceTree = "<group>"; };
+		F8A3B66F28725EC000A721C2 /* Unfocus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unfocus.swift; sourceTree = "<group>"; };
+		F8A3B67028725EC000A721C2 /* PearConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearConstants.swift; sourceTree = "<group>"; };
+		F8A3B67328725EC000A721C2 /* Hexa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hexa.swift; sourceTree = "<group>"; };
+		F8A3B67A28725F1300A721C2 /* PearPinPrompt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearPinPrompt.swift; sourceTree = "<group>"; };
+		F8A3B67B28725F1300A721C2 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		F8A3B67C28725F1300A721C2 /* PearLocalPlist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearLocalPlist.swift; sourceTree = "<group>"; };
+		F8A3B67D28725F1300A721C2 /* StatusBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
+		F8A3B67E28725F1300A721C2 /* PearCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearCard.swift; sourceTree = "<group>"; };
+		F8A3B67F28725F1300A721C2 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		F8A3B68028725F1300A721C2 /* PearBioPrompt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearBioPrompt.swift; sourceTree = "<group>"; };
+		F8A3B68128725F1300A721C2 /* Sync.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sync.swift; sourceTree = "<group>"; };
+		F8A3B68228725F1300A721C2 /* PearityCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearityCodable.swift; sourceTree = "<group>"; };
+		F8A3B68328725F1300A721C2 /* loginwindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = loginwindow.swift; sourceTree = "<group>"; };
+		F8A3B68428725F1300A721C2 /* UnPearCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnPearCard.swift; sourceTree = "<group>"; };
+		F8A3B69228725F1F00A721C2 /* AES256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AES256.swift; sourceTree = "<group>"; };
+		F8A3B69328725F1F00A721C2 /* NST256.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NST256.swift; sourceTree = "<group>"; };
+		F8A3B69428725F1F00A721C2 /* Defaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		F8A3B69528725F1F00A721C2 /* PearPKI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearPKI.swift; sourceTree = "<group>"; };
+		F8A3B69A28725F2C00A721C2 /* GetUserIDs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUserIDs.swift; sourceTree = "<group>"; };
+		F8A3B69B28725F2C00A721C2 /* GetUsersAndIDs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUsersAndIDs.swift; sourceTree = "<group>"; };
+		F8A3B69C28725F2C00A721C2 /* GetShortName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetShortName.swift; sourceTree = "<group>"; };
+		F8A3B69D28725F2C00A721C2 /* OpenDirectoryUsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpenDirectoryUsers.swift; sourceTree = "<group>"; };
+		F8A3B69E28725F2C00A721C2 /* GetConsoleUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetConsoleUser.swift; sourceTree = "<group>"; };
+		F8A3B69F28725F2C00A721C2 /* GetLongName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetLongName.swift; sourceTree = "<group>"; };
+		F8A3B6A028725F2C00A721C2 /* GetCurrentID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetCurrentID.swift; sourceTree = "<group>"; };
+		F8A3B6A128725F2C00A721C2 /* GetUID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetUID.swift; sourceTree = "<group>"; };
+		F8A3B6AA28725F3F00A721C2 /* Insertion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Insertion.swift; sourceTree = "<group>"; };
+		F8A3B6AB28725F3F00A721C2 /* SmartCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartCard.swift; sourceTree = "<group>"; };
+		F8A3B6B028725F4900A721C2 /* ShakeEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShakeEffect.swift; sourceTree = "<group>"; };
+		F8A3B6B128725F4900A721C2 /* PearView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearView.swift; sourceTree = "<group>"; };
+		F8A3B6B228725F4900A721C2 /* PinView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinView.swift; sourceTree = "<group>"; };
+		F8A3B6B628725F5A00A721C2 /* PearCreateCert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearCreateCert.swift; sourceTree = "<group>"; };
+		F8A3B6B728725F5B00A721C2 /* PearCertificate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearCertificate.swift; sourceTree = "<group>"; };
+		F8A3B6B828725F5B00A721C2 /* PearLiner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearLiner.swift; sourceTree = "<group>"; };
+		F8A3B6B928725F5B00A721C2 /* PearEncoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearEncoder.swift; sourceTree = "<group>"; };
+		F8A3B6BA28725F5B00A721C2 /* GerPearAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GerPearAuth.swift; sourceTree = "<group>"; };
+		F8A3B6BB28725F5B00A721C2 /* PearObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearObject.swift; sourceTree = "<group>"; };
+		F8A3B6BC28725F5B00A721C2 /* PearContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearContainer.swift; sourceTree = "<group>"; };
+		F8A3B6BD28725F5B00A721C2 /* PearKeyCert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearKeyCert.swift; sourceTree = "<group>"; };
+		F8A3B6BE28725F5B00A721C2 /* PearCert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearCert.swift; sourceTree = "<group>"; };
+		F8A3B6BF28725F5B00A721C2 /* PearSecurity.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PearSecurity.otf; sourceTree = "<group>"; };
+		F8A3B6C028725F5B00A721C2 /* PearSignCert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PearSignCert.swift; sourceTree = "<group>"; };
+		F8A3B6CE28725FF100A721C2 /* GetMachineID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GetMachineID.swift; sourceTree = "<group>"; };
+		F8A3B6D2287260DF00A721C2 /* Read.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Read.swift; sourceTree = "<group>"; };
+		F8A3B6D3287260DF00A721C2 /* Write.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Write.swift; sourceTree = "<group>"; };
+		F8A3B6D82872611200A721C2 /* run.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = run.swift; sourceTree = "<group>"; };
+		F8A3B6DB2872614600A721C2 /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		F8A3B70B2872620500A721C2 /* Activate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activate.swift; sourceTree = "<group>"; };
+		F8A3B73F287267E800A721C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F8DFB3DA2873692300A49C61 /* pear */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pear; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8DFB3DC2873692300A49C61 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F8A3B63B28725D3D00A721C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8A3B64F28725DEC00A721C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DFB3D72873692300A49C61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F8A3B63528725D3D00A721C2 = {
+			isa = PBXGroup;
+			children = (
+				F8A3B64028725D3D00A721C2 /* Pearity */,
+				F8A3B65628725DEC00A721C2 /* smartcard */,
+				F8DFB3DB2873692300A49C61 /* pear */,
+				F8A3B65328725DEC00A721C2 /* Frameworks */,
+				F8A3B63F28725D3D00A721C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F8A3B63F28725D3D00A721C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F8A3B63E28725D3D00A721C2 /* Pearity.app */,
+				F8A3B65228725DEC00A721C2 /* smartcard.appex */,
+				F8DFB3DA2873692300A49C61 /* pear */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8A3B64028725D3D00A721C2 /* Pearity */ = {
+			isa = PBXGroup;
+			children = (
+				F8A3B73F287267E800A721C2 /* Info.plist */,
+				F8A3B714287263D100A721C2 /* Main */,
+				F8A3B71C2872660E00A721C2 /* Notifications */,
+				F8A3B71B287264FB00A721C2 /* Structs */,
+				F8A3B7172872646700A721C2 /* Crypto */,
+				F8A3B7162872643800A721C2 /* CTK */,
+				F8A3B715287263E700A721C2 /* Getters */,
+				F8A3B7132872638400A721C2 /* Priv */,
+				F8A3B7122872634900A721C2 /* Actions */,
+				F8A3B7112872631C00A721C2 /* LaunchAgents */,
+				F8A3B710287262E700A721C2 /* UI */,
+				F8A3B70F287262C300A721C2 /* Extensions */,
+				F8A3B70E287262B400A721C2 /* IO */,
+				F8A3B70D2872626400A721C2 /* Global */,
+				F8A3B6BF28725F5B00A721C2 /* PearSecurity.otf */,
+				F8A3B64328725D3E00A721C2 /* Assets.xcassets */,
+				F8A3B64528725D3E00A721C2 /* MainMenu.xib */,
+				F8A3B64828725D3E00A721C2 /* Pearity.entitlements */,
+			);
+			path = Pearity;
+			sourceTree = "<group>";
+		};
+		F8A3B65328725DEC00A721C2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8A3B65428725DEC00A721C2 /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8A3B65628725DEC00A721C2 /* smartcard */ = {
+			isa = PBXGroup;
+			children = (
+				F8A3B66628725E1C00A721C2 /* PearToken.swift */,
+				F8A3B66928725E1D00A721C2 /* PearTokenAuth.swift */,
+				F8A3B66828725E1C00A721C2 /* PearTokenDriver.swift */,
+				F8A3B66728725E1C00A721C2 /* PearTokenSession.swift */,
+				F8A3B65D28725DEC00A721C2 /* Info.plist */,
+				F8A3B65E28725DEC00A721C2 /* smartcard.entitlements */,
+			);
+			path = smartcard;
+			sourceTree = "<group>";
+		};
+		F8A3B70D2872626400A721C2 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				F8A3B67028725EC000A721C2 /* PearConstants.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		F8A3B70E287262B400A721C2 /* IO */ = {
+			isa = PBXGroup;
+			children = (
+				F8A3B6D2287260DF00A721C2 /* Read.swift */,
+				F8A3B6D3287260DF00A721C2 /* Write.swift */,
+			);
+			path = IO;
+			sourceTree = "<group>";
+		};
+		F8A3B70F287262C300A721C2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F8A3B67328725EC000A721C2 /* Hexa.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F8A3B710287262E700A721C2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5F46CF6E288754E70065A083 /* sfAuth.swift */,
+				F8A3B6B128725F4900A721C2 /* PearView.swift */,
+				F8A3B68128725F1300A721C2 /* Sync.swift */,
+				F8A3B70B2872620500A721C2 /* Activate.swift */,
+				F8A3B6B228725F4900A721C2 /* PinView.swift */,
+				F8A3B6B028725F4900A721C2 /* ShakeEffect.swift */,
+				F8A3B67D28725F1300A721C2 /* StatusBar.swift */,
+				F8A3B66F28725EC000A721C2 /* Unfocus.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F8A3B7112872631C00A721C2 /* LaunchAgents */ = {
+			isa = PBXGroup;
+			children = (
+				F8A3B68228725F1300A721C2 /* PearityCodable.swift */,
+				F8A3B67C28725F1300A721C2 /* PearLocalPlist.swift */,
+			);
+			path = LaunchAgents;
+			sourceTree = "<group>";
+		};
+		F8A3B7122872634900A721C2 /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+				F8A3B6AA28725F3F00A721C2 /* Insertion.swift */,
+				F803436A2873B222003C551A /* MenuBarActions.swift */,
+				F8A3B67E28725F1300A721C2 /* PearCard.swift */,
+				F8A3B68428725F1300A721C2 /* UnPearCard.swift */,
+				F8A3B6AB28725F3F00A721C2 /* SmartCard.swift */,
+			);
+			path = Actions;
+			sourceTree = "<group>";
+		};
+		F8A3B7132872638400A721C2 /* Priv */ = {
+			isa = PBXGroup;
+			children = (
+				F8A3B6DB2872614600A721C2 /* Auth.swift */,
+				F8A3B68028725F1300A721C2 /* PearBioPrompt.swift */,
+				F8A3B67A28725F1300A721C2 /* PearPinPrompt.swift */,
+			);
+			path = Priv;
+			sourceTree = "<group>";
+		};
+		F8A3B714287263D100A721C2 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F8A3B67F28725F1300A721C2 /* main.swift */,
+				F8A3B64128725D3D00A721C2 /* AppDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		F8A3B715287263E700A721C2 /* Getters */ = {
+			isa = PBXGroup;
+			children = (
+				F8A3B69E28725F2C00A721C2 /* GetConsoleUser.swift */,
+				F8A3B6A028725F2C00A721C2 /* GetCurrentID.swift */,
+				F8A3B69F28725F2C00A721C2 /* GetLongName.swift */,
+				F8A3B69C28725F2C00A721C2 /* GetShortName.swift */,
+				F8A3B6A128725F2C00A721C2 /* GetUID.swift */,
+				F8A3B69A28725F2C00A721C2 /* GetUserIDs.swift */,
+				F8A3B69B28725F2C00A721C2 /* GetUsersAndIDs.swift */,
+				F8A3B6CE28725FF100A721C2 /* GetMachineID.swift */,
+				F8A3B6BA28725F5B00A721C2 /* GerPearAuth.swift */,
+				F80343682873AE76003C551A /* GetBundlePath.swift */,
+			);
+			path = Getters;
+			sourceTree = "<group>";
+		};
+		F8A3B7162872643800A721C2 /* CTK */ = {
+			isa = PBXGroup;
+			children = (
+				F8A3B67B28725F1300A721C2 /* Config.swift */,
+			);
+			path = CTK;
+			sourceTree = "<group>";
+		};
+		F8A3B7172872646700A721C2 /* Crypto */ = {
+			isa = PBXGroup;
+			children = (
+				F8A3B69228725F1F00A721C2 /* AES256.swift */,
+				F8A3B69428725F1F00A721C2 /* Defaults.swift */,
+				F8A3B69328725F1F00A721C2 /* NST256.swift */,
+				F8A3B69528725F1F00A721C2 /* PearPKI.swift */,
+				F8A3B6BE28725F5B00A721C2 /* PearCert.swift */,
+				F8A3B6BD28725F5B00A721C2 /* PearKeyCert.swift */,
+				F8A3B6B628725F5A00A721C2 /* PearCreateCert.swift */,
+				F8A3B6C028725F5B00A721C2 /* PearSignCert.swift */,
+				F8A3B6B728725F5B00A721C2 /* PearCertificate.swift */,
+				F8A3B6BC28725F5B00A721C2 /* PearContainer.swift */,
+				F8A3B6B928725F5B00A721C2 /* PearEncoder.swift */,
+				F8A3B6B828725F5B00A721C2 /* PearLiner.swift */,
+				F8A3B6BB28725F5B00A721C2 /* PearObject.swift */,
+			);
+			path = Crypto;
+			sourceTree = "<group>";
+		};
+		F8A3B71B287264FB00A721C2 /* Structs */ = {
+			isa = PBXGroup;
+			children = (
+				F8A3B69D28725F2C00A721C2 /* OpenDirectoryUsers.swift */,
+			);
+			path = Structs;
+			sourceTree = "<group>";
+		};
+		F8A3B71C2872660E00A721C2 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				F8A3B66E28725EC000A721C2 /* PearListener.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		F8DFB3DB2873692300A49C61 /* pear */ = {
+			isa = PBXGroup;
+			children = (
+				F8DFB3DC2873692300A49C61 /* main.swift */,
+				F8A3B6D82872611200A721C2 /* run.swift */,
+				F8A3B68328725F1300A721C2 /* loginwindow.swift */,
+			);
+			path = pear;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F8A3B63D28725D3D00A721C2 /* Pearity */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8A3B64B28725D3E00A721C2 /* Build configuration list for PBXNativeTarget "Pearity" */;
+			buildPhases = (
+				F8A3B63A28725D3D00A721C2 /* Sources */,
+				F8A3B63B28725D3D00A721C2 /* Frameworks */,
+				F8A3B63C28725D3D00A721C2 /* Resources */,
+				F8A3B66528725DEC00A721C2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F8A3B66028725DEC00A721C2 /* PBXTargetDependency */,
+			);
+			name = Pearity;
+			productName = Pearity;
+			productReference = F8A3B63E28725D3D00A721C2 /* Pearity.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F8A3B65128725DEC00A721C2 /* smartcard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8A3B66228725DEC00A721C2 /* Build configuration list for PBXNativeTarget "smartcard" */;
+			buildPhases = (
+				F8A3B64E28725DEC00A721C2 /* Sources */,
+				F8A3B64F28725DEC00A721C2 /* Frameworks */,
+				F8A3B65028725DEC00A721C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = smartcard;
+			productName = smartcard;
+			productReference = F8A3B65228725DEC00A721C2 /* smartcard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F8DFB3D92873692300A49C61 /* pear */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8DFB3DE2873692300A49C61 /* Build configuration list for PBXNativeTarget "pear" */;
+			buildPhases = (
+				F8DFB3D62873692300A49C61 /* Sources */,
+				F8DFB3D72873692300A49C61 /* Frameworks */,
+				F8DFB3D82873692300A49C61 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pear;
+			productName = pear;
+			productReference = F8DFB3DA2873692300A49C61 /* pear */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8A3B63628725D3D00A721C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					F8A3B63D28725D3D00A721C2 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					F8A3B65128725DEC00A721C2 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					F8DFB3D92873692300A49C61 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = F8A3B63928725D3D00A721C2 /* Build configuration list for PBXProject "Pearity" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F8A3B63528725D3D00A721C2;
+			productRefGroup = F8A3B63F28725D3D00A721C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F8A3B63D28725D3D00A721C2 /* Pearity */,
+				F8A3B65128725DEC00A721C2 /* smartcard */,
+				F8DFB3D92873692300A49C61 /* pear */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F8A3B63C28725D3D00A721C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80343672873AC91003C551A /* pear in Resources */,
+				F8A3B64428725D3E00A721C2 /* Assets.xcassets in Resources */,
+				F8A3B6CA28725F5B00A721C2 /* PearSecurity.otf in Resources */,
+				F8A3B64728725D3E00A721C2 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8A3B65028725DEC00A721C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F8A3B63A28725D3D00A721C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A3B6D4287260DF00A721C2 /* Read.swift in Sources */,
+				F8A3B6AE28725F3F00A721C2 /* SmartCard.swift in Sources */,
+				5F46CF6F288754E70065A083 /* sfAuth.swift in Sources */,
+				F8A3B68B28725F1300A721C2 /* main.swift in Sources */,
+				F8A3B68728725F1300A721C2 /* Config.swift in Sources */,
+				F8A3B7382872674B00A721C2 /* Sync.swift in Sources */,
+				F8A3B6A328725F2C00A721C2 /* GetUsersAndIDs.swift in Sources */,
+				F8A3B6AD28725F3F00A721C2 /* Insertion.swift in Sources */,
+				F8A3B6A628725F2C00A721C2 /* GetConsoleUser.swift in Sources */,
+				F8A3B7342872674B00A721C2 /* ShakeEffect.swift in Sources */,
+				F8DFB3E428736BD400A49C61 /* run.swift in Sources */,
+				F8A3B6C928725F5B00A721C2 /* PearCert.swift in Sources */,
+				F8A3B69028725F1300A721C2 /* UnPearCard.swift in Sources */,
+				F8A3B69628725F1F00A721C2 /* AES256.swift in Sources */,
+				F8A3B6CB28725F5B00A721C2 /* PearSignCert.swift in Sources */,
+				F8A3B6A828725F2C00A721C2 /* GetCurrentID.swift in Sources */,
+				F8A3B64228725D3D00A721C2 /* AppDelegate.swift in Sources */,
+				F803436B2873B222003C551A /* MenuBarActions.swift in Sources */,
+				F8A3B6A428725F2C00A721C2 /* GetShortName.swift in Sources */,
+				F8A3B6C628725F5B00A721C2 /* PearObject.swift in Sources */,
+				F8A3B7392872674B00A721C2 /* Activate.swift in Sources */,
+				F8A3B69928725F1F00A721C2 /* PearPKI.swift in Sources */,
+				F8A3B6C228725F5B00A721C2 /* PearCertificate.swift in Sources */,
+				F8A3B67428725EC000A721C2 /* PearListener.swift in Sources */,
+				F8A3B6C428725F5B00A721C2 /* PearEncoder.swift in Sources */,
+				F8A3B6A528725F2C00A721C2 /* OpenDirectoryUsers.swift in Sources */,
+				F803436C2873B5C2003C551A /* loginwindow.swift in Sources */,
+				F80343692873AE76003C551A /* GetBundlePath.swift in Sources */,
+				F8A3B68E28725F1300A721C2 /* PearityCodable.swift in Sources */,
+				F8A3B67928725EC000A721C2 /* Hexa.swift in Sources */,
+				F8A3B6C128725F5B00A721C2 /* PearCreateCert.swift in Sources */,
+				F8A3B69728725F1F00A721C2 /* NST256.swift in Sources */,
+				F8A3B68C28725F1300A721C2 /* PearBioPrompt.swift in Sources */,
+				F8A3B6CF28725FF100A721C2 /* GetMachineID.swift in Sources */,
+				F8A3B73A2872674B00A721C2 /* PinView.swift in Sources */,
+				F8A3B68A28725F1300A721C2 /* PearCard.swift in Sources */,
+				F8A3B6A928725F2C00A721C2 /* GetUID.swift in Sources */,
+				F8A3B6A728725F2C00A721C2 /* GetLongName.swift in Sources */,
+				F8A3B6D6287260DF00A721C2 /* Write.swift in Sources */,
+				F8A3B6A228725F2C00A721C2 /* GetUserIDs.swift in Sources */,
+				F8A3B67628725EC000A721C2 /* PearConstants.swift in Sources */,
+				F8A3B6DC2872614600A721C2 /* Auth.swift in Sources */,
+				F8A3B6C728725F5B00A721C2 /* PearContainer.swift in Sources */,
+				F8A3B68828725F1300A721C2 /* PearLocalPlist.swift in Sources */,
+				F8A3B6C328725F5B00A721C2 /* PearLiner.swift in Sources */,
+				F8A3B68628725F1300A721C2 /* PearPinPrompt.swift in Sources */,
+				F8A3B6C828725F5B00A721C2 /* PearKeyCert.swift in Sources */,
+				F8A3B7372872674B00A721C2 /* Unfocus.swift in Sources */,
+				F8A3B7352872674B00A721C2 /* StatusBar.swift in Sources */,
+				F8A3B69828725F1F00A721C2 /* Defaults.swift in Sources */,
+				F8A3B7362872674B00A721C2 /* PearView.swift in Sources */,
+				F8A3B6C528725F5B00A721C2 /* GerPearAuth.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8A3B64E28725DEC00A721C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8A3B66D28725E1D00A721C2 /* PearTokenAuth.swift in Sources */,
+				F8A3B73B2872677300A721C2 /* PearPKI.swift in Sources */,
+				F8A3B66B28725E1D00A721C2 /* PearTokenSession.swift in Sources */,
+				F8A3B73E2872679C00A721C2 /* PearListener.swift in Sources */,
+				F8A3B73D2872678D00A721C2 /* GetMachineID.swift in Sources */,
+				F8A3B73C2872677D00A721C2 /* AES256.swift in Sources */,
+				F8A3B66C28725E1D00A721C2 /* PearTokenDriver.swift in Sources */,
+				F8A3B66A28725E1D00A721C2 /* PearToken.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8DFB3D62873692300A49C61 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8DFB3DD2873692300A49C61 /* main.swift in Sources */,
+				F8DFB3E328736AA400A49C61 /* run.swift in Sources */,
+				F8DFB3E228736A6300A49C61 /* PearityCodable.swift in Sources */,
+				F8DFB3E128736A2C00A49C61 /* loginwindow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F8A3B66028725DEC00A721C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8A3B65128725DEC00A721C2 /* smartcard */;
+			targetProxy = F8A3B65F28725DEC00A721C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F8A3B64528725D3E00A721C2 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8A3B64628725D3E00A721C2 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F8A3B64928725D3E00A721C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F8A3B64A28725D3E00A721C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F8A3B64C28725D3E00A721C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pearity/Pearity.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = 469UCUB275;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pearity/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.6;
+				OTHER_LDFLAGS = (
+					"\"-sectcreate\"",
+					__CGPreLoginApp,
+					__cgpreloginapp,
+					/dev/null,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pearsecurity.Pearity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F8A3B64D28725D3E00A721C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pearity/Pearity.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = 469UCUB275;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pearity/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainNibFile = MainMenu;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.6;
+				OTHER_LDFLAGS = (
+					"\"-sectcreate\"",
+					__CGPreLoginApp,
+					__cgpreloginapp,
+					/dev/null,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.pearsecurity.Pearity;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F8A3B66328725DEC00A721C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = smartcard/smartcard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = 469UCUB275;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = smartcard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = smartcard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.6;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pearsecurity.Pearity.smartcard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F8A3B66428725DEC00A721C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = smartcard/smartcard.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 6;
+				DEVELOPMENT_TEAM = 469UCUB275;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = smartcard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = smartcard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.6;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pearsecurity.Pearity.smartcard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F8DFB3DF2873692300A49C61 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 469UCUB275;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F8DFB3E02873692300A49C61 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 469UCUB275;
+				ENABLE_HARDENED_RUNTIME = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F8A3B63928725D3D00A721C2 /* Build configuration list for PBXProject "Pearity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8A3B64928725D3E00A721C2 /* Debug */,
+				F8A3B64A28725D3E00A721C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8A3B64B28725D3E00A721C2 /* Build configuration list for PBXNativeTarget "Pearity" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8A3B64C28725D3E00A721C2 /* Debug */,
+				F8A3B64D28725D3E00A721C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8A3B66228725DEC00A721C2 /* Build configuration list for PBXNativeTarget "smartcard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8A3B66328725DEC00A721C2 /* Debug */,
+				F8A3B66428725DEC00A721C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F8DFB3DE2873692300A49C61 /* Build configuration list for PBXNativeTarget "pear" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8DFB3DF2873692300A49C61 /* Debug */,
+				F8DFB3E02873692300A49C61 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8A3B63628725D3D00A721C2 /* Project object */;
+}
