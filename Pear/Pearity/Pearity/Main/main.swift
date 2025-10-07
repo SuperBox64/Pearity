@@ -9,13 +9,6 @@
 import Foundation
 import Cocoa
 
-private func config() {
-    if isLoginWindowActive() {
-        //removeTokenConfig()
-        addTokenConfig()
-    }
-}
-
 private func session() -> Bool {
     CGSessionCopyCurrentDictionary() != nil
 }
